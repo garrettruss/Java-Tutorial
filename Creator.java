@@ -1,5 +1,5 @@
 /*
-n Java, we specify the type of information we’re storing. Primitive datatypes are types of data built-in to the Java system. The three main primitive types we’ll cover are int, double, and boolean.
+In Java, we specify the type of information we’re storing. Primitive datatypes are types of data built-in to the Java system. The three main primitive types we’ll cover are int, double, and boolean.
 
 We must declare a variable to reference it within our program. Declaring a variable requires that we specify the type and name.
 */
