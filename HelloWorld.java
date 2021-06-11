@@ -129,6 +129,10 @@ This code uses the method println() to send the text “Hello World!” to the t
 out is located within System, which is another object responsible for representing our computer within the program! We can access parts of an object with a ., which is known as dot notation.
 
 This line of code is a statement, because it performs a single task. Statements always conclude with a semicolon.
+
+Java is a compiled language. Before programs run, the source code of a .java file must be transformed into an executable .class by the compiler. Once compiled, the program can be run from the terminal.
+
+This compilation process is necessary for every program, so why not have the IDE do it for us? IDEs provide automated build processes for languages, so the act of compiling and executing code is abstracted away.
  */
 
  public class HelloWorld {
