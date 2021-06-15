@@ -8,7 +8,7 @@ Variable names of only one word are spelled in all lowercase letters. Variable n
 
 public class BadNames {
     public static void main(String[] args) {   
-		String 1stName = "Samira";
+	String 1stName = "Samira";
     String blah = "Smith";
     String .com = "samira@google.com";
     int salaryexpectation = 100000;
