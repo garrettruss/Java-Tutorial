@@ -9,7 +9,7 @@ public class MadLibs {
         String adjective2 = "fantastic";
         String adjective3 = "funny";
         String verb1 = "sing";
-        String noun1 = "bees";
+        String noun1 = "wasp";
         String noun2 = "honey";
         String noun3 = "song";
         String noun4 = "cat";
