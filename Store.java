@@ -4,7 +4,9 @@ public class Store {
     int inventoryCount;
     double inventoryPrice;
 
-    // constructor method
+    // In order to create an object (an instance of a class), we need a constructor
+    // method. The constructor is defined within the class. 
+    // constructor method: 
     public Store(String product, int count, double price) {
         productType = product;
         inventoryCount = count;
