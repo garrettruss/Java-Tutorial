@@ -9,6 +9,7 @@ System.out.println(message);
 This code will print:
 
 Your balance is: 10000
+public class zoo
 */
 
 public class Zoo {
