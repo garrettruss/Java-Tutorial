@@ -12,7 +12,7 @@ public class MadLibs {
         String noun1 = "wasp";
         String noun2 = "honey";
         String noun3 = "song";
-        String noun4 = "cat";
+        String noun4 = "mouse";
         String noun5 = "maple syrup";
         String noun6 = "trees";
         String name2 = "Cathryn";
