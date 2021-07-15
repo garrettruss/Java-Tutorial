@@ -5,7 +5,8 @@ public class Store {
     double inventoryPrice;
 
     // In order to create an object (an instance of a class), we need a constructor
-    // method. The constructor is defined within the class. 
+    // method. The constructor is defined within the class. A method is a task that
+    // an object of a class performs
     // constructor method
     public Store(String product, int count, double price) {
         productType = product;
