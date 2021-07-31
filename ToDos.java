@@ -61,6 +61,12 @@ class ToDos {
 
     System.out.println(sherlocksToDos.toString() + "\n");
     System.out.println(poirotsToDos.toString());
+
+    // Calculate to-dos until case is solved: (Getting items index.)
+    System.out.println(sherlocksToDos.indexOf("solve the case"));
+
+    // Change the value printed:
+    System.out.println("3 things to do before solving the case");
   }
 
 }
