@@ -46,6 +46,21 @@ class ToDos {
     System.out.println(sherlocksToDos.toString() + "\n");
     System.out.println("Poirot's to-do list:");
     System.out.println(poirotsToDos.toString());
+
+    /*
+     * What if we wanted to get rid of an entry altogether? For arrays, we would
+     * have to make a completely new array without the value.
+     * 
+     * Luckily, ArrayLists allow us to remove an item by specifying the index to
+     * remove or by specifying the value to remove.
+     */
+    // Remove each to-do below:
+    sherlocksToDos.remove("visit the crime scene");
+    poirotsToDos.remove("visit the crime scene");
+    sherlocksToDos.remove("play violin");
+
+    System.out.println(sherlocksToDos.toString() + "\n");
+    System.out.println(poirotsToDos.toString());
   }
 
 }
