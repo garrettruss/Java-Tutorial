@@ -1,44 +1,29 @@
 public class SavingsAccount {
 
-    int balance;
+    public String owner;
+    public int balanceDollar;
+    public double balanceEuro;
 
-    public SavingsAccount(int initialBalance) {
-        balance = initialBalance;
+    public SavingsAccount(String owner, int balanceDollar) {
+        // Complete the constructor
+        this.owner = owner;
+        this.balanceDollar = balanceDollar;
+        this.balanceEuro = balanceDollar * 0.85;
+
     }
 
-    public void checkBalance() {
-        System.out.println("Hello!");
-        System.out.println("Your balance is " + balance);
-    }
-
-    public void deposit(int amountToDeposit) {
-        balance = balance + amountToDeposit;
-        System.out.println("You just deposited " + amountToDeposit);
-    }
-
-    public int withdraw(int amountToWithdraw) {
-        balance = balance - amountToWithdraw;
-        System.out.println("You just withdrew " + amountToWithdraw);
-        return amountToWithdraw;
+    public void addMoney(int balanceDollar) {
+        // Complete this method
+        System.out.println("Adding " + balanceDollar + " dollars to the account.");
+        this.balanceDollar += balanceDollar;
+        System.out.println("The new ballance is " + this.balanceDollar + " dollars.");
     }
 
     public static void main(String[] args) {
-        SavingsAccount savings = new SavingsAccount(2000);
+        SavingsAccount zeusSavingsAccount = new SavingsAccount("Zeus", 1000);
 
-        // Check balance:
-        savings.checkBalance();
-
-        // Withdrawing:
-        savings.withdraw(300);
-
-        // Check balance:
-        savings.checkBalance();
-
-        // Deposit:
-        savings.deposit(400);
-
-        // Check balance:
-        savings.checkBalance();
-
+        // Make a call to addMoney() to test your method
+        zeusSavingsAccount.addMoney(2000);
     }
+
 }
