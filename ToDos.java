@@ -9,7 +9,7 @@ class ToDos {
 
         sherlocksToDos.add("visit the crime scene");
         sherlocksToDos.add("play violin");
-        sherlocksToDos.add("interview suspects");
+        sherlocksToDos.add("interview suspect");
         sherlocksToDos.add("solve the case");
         sherlocksToDos.add("apprehend the criminal");
 
