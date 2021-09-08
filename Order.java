@@ -17,7 +17,7 @@ public class Order {
             System.out.println("Shipping");
             System.out.println("Shipping cost: " + calculateShipping());
         } else {
-            System.out.println("Order not ready");
+            System.out.println("Order is not ready");
         }
     }
 
