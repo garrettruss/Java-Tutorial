@@ -87,6 +87,19 @@ public class DoublyLinkedList {
       if (nodeToRemove == null) {
           return null;
       }
+
+      if (nodeToRemove == this.head) {
+          this.removeHead();
+      } else if (nodeToRemove == this.tail) {
+          this.removeTail();
+      } else {
+          Node nextNode = nodeToRemove.getNextNode();
+          Node previousNode = nodeToRemove.getPreviousNode();
+
+          nextNode.setPreviousNode(previousNode);
+          previousNode.setNextNode(nextNode);
+      }
+      
       return nodeToRemove;
   }
 
