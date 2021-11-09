@@ -63,22 +63,12 @@ public class Queue {
         this.maxSize = maxSize;
     }
 
-    // Define hasSpace() below
     public boolean hasSpace() {
-        if (this.size < maxSize) {
-            return true;
-        } else {
-            return false;
-        }
+        return this.size < this.maxSize;
     }
 
-    // Define isEmpty() below
     public boolean isEmpty() {
-        if (this.size == 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return this.size == 0;
     }
 
     public void enqueue(String data) {
@@ -88,24 +78,35 @@ public class Queue {
     }
 
     public String dequeue() {
-        String data = this.queue.removeHead();
-        this.size--;
-        System.out.println("Removed " + data + "! Queue size is now " + this.size);
-        return data;
+        if (!this.isEmpty()) {
+            String data = this.queue.removeHead();
+            this.size--;
+            System.out.println("Removed " + data + "! Queue size is now " + this.size);
+            return data;
+        } else {
+            throw new Error("Queue is empty!");
+        }
     }
 
     public String peek() {
-        return this.queue.head.data;
+        if (!this.isEmpty()) {
+            return this.queue.head.data;
+        } else {
+            return null;
+        }
+
     }
 
     public static void main(String[] args) {
 
-        Queue queueOne = new Queue(25);
-        Queue queueTwo = new Queue(0);
-        System.out.println("queueOne has space for more nodes: " + queueOne.hasSpace());
-        System.out.println("queueTwo has space for more nodes: " + queueTwo.hasSpace());
-        System.out.println("queueOne is empty: " + queueOne.isEmpty());
-        System.out.println("queueTwo is empty: " + queueTwo.isEmpty());
+        Queue boundedQueue = new Queue(3);
+        boundedQueue.enqueue("one");
+        boundedQueue.enqueue("two");
+        boundedQueue.enqueue("three");
+        boundedQueue.dequeue();
+        boundedQueue.dequeue();
+        boundedQueue.dequeue();
+        boundedQueue.dequeue();
 
     }
 }
