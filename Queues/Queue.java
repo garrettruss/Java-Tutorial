@@ -72,9 +72,14 @@ public class Queue {
     }
 
     public void enqueue(String data) {
-        this.queue.addToTail(data);
-        this.size++;
-        System.out.println("Added " + data + "! Queue size is now " + this.size);
+        if (this.hasSpace()) {
+            this.queue.addToTail(data);
+            this.size++;
+            System.out.println("Added " + data + "! Queue size is now " + this.size);
+        } else {
+            throw new Error("Queue is full!");
+        }
+
     }
 
     public String dequeue() {
@@ -89,22 +94,19 @@ public class Queue {
     }
 
     public String peek() {
-        if (!this.isEmpty()) {
-            return this.queue.head.data;
-        } else {
+        if (this.isEmpty()) {
             return null;
+        } else {
+            return this.queue.head.data;
         }
-
     }
 
     public static void main(String[] args) {
 
         Queue boundedQueue = new Queue(3);
-        boundedQueue.enqueue("one");
-        boundedQueue.enqueue("two");
-        boundedQueue.enqueue("three");
-        boundedQueue.dequeue();
-        boundedQueue.dequeue();
+        boundedQueue.enqueue("latte");
+        boundedQueue.enqueue("coffee");
+        boundedQueue.enqueue("tea");
         boundedQueue.dequeue();
         boundedQueue.dequeue();
 
