@@ -24,7 +24,6 @@ Getting an integer representing an index can be done by summing the character co
 */
 
 
-import java.util.Arrays;
 
 public class HashMap {
 
@@ -48,9 +47,14 @@ public class HashMap {
         this.hashmap[arrayIndex] = value;
     }
 
+    public String retrieve(String key) {
+        int arrayIndex = this.hash(key);
+        return this.hashmap[arrayIndex];
+    }
+
     public static void main(String[] args) {
-        HashMap employees = new HashMap(3);
-        employees.assign("34-567", "Mara");
-        System.out.println(Arrays.toString(employees.hashmap)); // [null, Mara, null]
+        HashMap aboutMe = new HashMap(3);
+        aboutMe.assign("myFavoriteColor", "brown");
+        System.out.println(aboutMe.retrieve("myFavoriteColor"));
     }
 }
