@@ -22,15 +22,15 @@ Getting an integer representing an index can be done by summing the character co
 
   //Compression with modular arithmetic
 */
-
-
-
 public class HashMap {
 
-    public String[] hashmap;
+    public LinkedList[] hashmap;
 
     public HashMap(int size) {
-        this.hashmap = new String[size];
+        this.hashmap = new LinkedList[size];
+        for (int i = 0; i < size; i++) {
+            this.hashmap[i] = new LinkedList();
+        }
     }
 
     public int hash(String key) {
@@ -44,17 +44,44 @@ public class HashMap {
 
     public void assign(String key, String value) {
         int arrayIndex = this.hash(key);
-        this.hashmap[arrayIndex] = value;
+        LinkedList list = this.hashmap[arrayIndex];
+        if (list.head == null) {
+            list.addToHead(key, value);
+            return;
+        }
+        Node current = list.head;
+        while (current != null) {
+            if (current.key == key) {
+                current.setKeyValue(key, value);
+            }
+            if (current.getNextNode() == null) {
+                current.setNextNode(new Node(key, value));
+                break;
+            }
+            current = current.getNextNode();
+        }
     }
 
     public String retrieve(String key) {
         int arrayIndex = this.hash(key);
-        return this.hashmap[arrayIndex];
+        Node current = this.hashmap[arrayIndex].head;
+        while (current != null) {
+            if (current.key == key) {
+                return current.value;
+            }
+            current = current.getNextNode();
+        }
+        return null;
     }
 
     public static void main(String[] args) {
-        HashMap aboutMe = new HashMap(3);
-        aboutMe.assign("myFavoriteColor", "brown");
-        System.out.println(aboutMe.retrieve("myFavoriteColor"));
+        HashMap birdCensus = new HashMap(15);
+        birdCensus.assign("mandarin duck", "Central Park Pond");
+        birdCensus.assign("monk parakeet", "Brooklyn College");
+        birdCensus.assign("horned owl", "Pelham Bay Park");
+        System.out.println(birdCensus.retrieve("mandarin duck"));
+        System.out.println(birdCensus.retrieve("monk parakeet"));
+        System.out.println(birdCensus.retrieve("horned owl"));
+
     }
 }
