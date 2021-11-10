@@ -12,3 +12,5 @@ There are varieties of asymptotic notation that focus on different concerns. Som
 In this next module, we will learn more about asymptotic notation, how to properly analyze the runtime of a program through asymptotic notation, and how to take into consideration the runtime of different data structures and algorithms when creating programs. Learning these skills will change the way you think when you design programs and it will prepare you for the software engineering world where creating efficient programs is an essential skill.
 
 Let’s dive into the world of asymptotic notation!
+
+https://www.geeksforgeeks.org/difference-between-big-oh-big-omega-and-big-theta/

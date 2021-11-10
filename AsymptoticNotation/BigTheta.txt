@@ -1,0 +1,70 @@
+Big Theta (Θ)
+The first subtype of asymptotic notation we will explore is big Theta (denoted by Θ). We use big Theta when a program has only one case in term of runtime. But what exactly does that mean? Take a look at the pseudocode for a function that prints the values in a list below:
+
+Function with input that is a list of size N:
+   For each value in list:
+    Print the value
+The number of instructions the computer has to perform is based on how many iterations the loop will do because if the loop does more iterations, then the computer will perform instructions. Now, let’s see how many iterations the loop will do dependent on the value of N.
+
+Size of List	–vs.–	Number of Iterations
+1		1
+2		2
+3		3
+.		.
+.		.
+.		.
+.		.
+.		.
+N		N
+As we can see in every case, with a list of size N, the program has a runtime of N because the program has to print a value N times. Thus, we would say the runtime is Θ(N).
+
+Let’s look at a more complicated example. In the following pseudocode program, the function takes in an integer, N, and counts the number of times it takes for N to be divided by 2 until N reaches 1.
+
+Function that has integer input N:
+    Set a count variable to 0
+    Loop while N is not equal to 1:
+        Increment count
+        N = N/2
+    Return count
+Now, let’s see how many iterations the loop will perform based on N.
+
+N	–vs.–	Number of Iterations
+1		0
+.		.
+.		.
+.		.
+2		1
+.		.
+.		.
+.		.
+4		2
+.		.
+.		.
+.		.
+8		3
+.		.
+.		.
+.		.
+16		4
+.		.
+.		.
+.		.
+N		log2N
+As we can see, in every case, with an integer N, the loop will iterate log2(N) times. However, because we drop constants in asymptotic notation, we would say that the runtime of this program is Θ(log N).
+
+But what happens when there are multiple runtime cases for a single program? We will learn about that in a future exercise.
+
+
+ASYMPTOTIC NOTATION: CONCEPTUAL
+Common Runtimes
+Before we delve into the multiple runtime cases, let’s see the different common runtimes a program could have. Below is a list of common runtimes that run from fastest to slowest.
+
+Θ(1). This is constant runtime. This is the runtime when a program will always do the same thing regardless of the input. For instance, a program that only prints “hello, world” runs in Θ(1) because the program will always just print “hello, world”.
+Θ(log N). This is logarithmic runtime. You will see this runtime in search algorithms.
+Θ(N). This is linear runtime. You will often see this when you have to iterate through an entire dataset.
+Θ(N*logN). You will see this runtime in sorting algorithms.
+Θ(N2). This is an example of a polynomial runtime. You will see this runtime when you have to search through a two-dimensional dataset (like a matrix) or nested loops.
+Θ(2N). This is exponential runtime. You will often see this runtime in recursive algorithms (Don’t worry if you don’t know what that is yet!).
+Θ(N!). This is factorial runtime. You will often see this runtime when you have to generate all of the different permutations of something. For instance, a program that generates all the different ways to order the letters “abcd” would run in this runtime.
+
+most efficient to least = Constant, Logarithmic, Linear, Quadratic, Exponential, Factorial.
