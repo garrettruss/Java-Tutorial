@@ -1,3 +1,4 @@
+package PartOne;
 public class NestedLoop {
     public static void main(String[] args) {
         int[] seatsDayOne = { 850007, 841141, 150017, 622393, 178505, 952093, 492450, 790218, 515994, 926666, 476090,

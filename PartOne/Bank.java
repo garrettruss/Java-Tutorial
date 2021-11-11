@@ -1,3 +1,4 @@
+package PartOne;
 public class Bank {
     private CheckingAccount accountOne;
     private CheckingAccount accountTwo;

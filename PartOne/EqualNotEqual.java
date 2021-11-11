@@ -1,3 +1,4 @@
+package PartOne;
 /*
 We can use another relational operator to do this. == will tell us if two variables are equal:
 

@@ -1,3 +1,4 @@
+package PartOne;
 /*
 int, which stores whole numbers.
 double, which stores bigger whole numbers and decimal numbers.

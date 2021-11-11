@@ -1,3 +1,4 @@
+package PartOne;
 // dna
 public class DNA {
 

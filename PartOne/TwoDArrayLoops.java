@@ -1,3 +1,4 @@
+package PartOne;
 public class TwoDArrayLoops {
     public static void main(String[] args) {
         String[][] wordData = { { "study", "consider", "examine", "learn" },

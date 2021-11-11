@@ -1,3 +1,4 @@
+package PartOne;
 class RandomNumbers {
     public static void main(String[] args) {
         // Random double value between 0 and 1

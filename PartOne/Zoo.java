@@ -1,3 +1,4 @@
+package PartOne;
 /*
 The + operator, which we used for adding numbers together, can be used to concatenate Strings. In other words, we can use it to join two Strings together!
 

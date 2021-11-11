@@ -1,3 +1,4 @@
+package PartOne;
 public class Calculator {
     public Calculator() {
 

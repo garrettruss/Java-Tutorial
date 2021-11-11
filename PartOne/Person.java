@@ -1,3 +1,4 @@
+package PartOne;
 public class Person {
     public int age;
     public int wisdom;

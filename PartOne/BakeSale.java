@@ -1,3 +1,4 @@
+package PartOne;
 /*
 Compound assignment operators perform an arithmetic operation on a variable and then reassigns its value.
 

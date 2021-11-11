@@ -1,3 +1,4 @@
+package PartOne;
 /*
 In Java, we specify the type of information we’re storing. Primitive datatypes are types of data built-in to the Java system. The three main primitive types we’ll cover are int, double, and boolean.
 

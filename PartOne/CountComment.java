@@ -1,3 +1,4 @@
+package PartOne;
 /*
 In Java, whole numbers are stored in the int primitive data type.
 

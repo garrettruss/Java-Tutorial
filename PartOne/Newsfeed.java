@@ -1,3 +1,4 @@
+package PartOne;
 public class Newsfeed {
 
     String[] trendingArticles;

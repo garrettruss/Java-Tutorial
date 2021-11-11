@@ -1,3 +1,4 @@
+package PartOne;
 /*
 String
 So far, we have learned primitive data types, which are the simplest types of data with no built-in behavior. Our programs will also use Strings, which are objects, instead of primitives. Objects have built-in behavior.

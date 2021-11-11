@@ -1,3 +1,4 @@
+package PartOne;
 /*
 Division has different results with integers. The / operator does integer division, which means that any remainder is lost.
 

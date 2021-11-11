@@ -1,3 +1,4 @@
+package PartOne;
 public class ColumnMajor {
     public static void main(String[] args) {
         // Given runner lap data

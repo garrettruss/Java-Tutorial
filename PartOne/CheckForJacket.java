@@ -1,3 +1,4 @@
+package PartOne;
 public class CheckForJacket {
 public static boolean checkForJacket(String[] lst) {
   for (int i = 0; i < lst.length; i++) {

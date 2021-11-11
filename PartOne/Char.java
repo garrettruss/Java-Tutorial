@@ -1,3 +1,4 @@
+package PartOne;
 /*
 The char data type can hold any character, like a letter, space, or punctuation mark.
 

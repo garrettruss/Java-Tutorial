@@ -1,3 +1,4 @@
+package PartOne;
 public class Dog {
     String breed;
     boolean hasOwner;

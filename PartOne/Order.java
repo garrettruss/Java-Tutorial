@@ -1,3 +1,4 @@
+package PartOne;
 public class Order {
     boolean isFilled;
     double billAmount;

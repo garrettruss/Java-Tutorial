@@ -1,3 +1,5 @@
+package PartOne;
+
 public class ATM {
     // Static variables
     public static int totalMoney = 0;

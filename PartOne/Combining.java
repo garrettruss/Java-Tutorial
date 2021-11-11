@@ -1,3 +1,4 @@
+package PartOne;
 import java.util.Arrays;
 
 public class Combining {

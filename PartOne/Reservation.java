@@ -1,3 +1,4 @@
+package PartOne;
 public class Reservation {
     int guestCount;
     int restaurantCapacity;

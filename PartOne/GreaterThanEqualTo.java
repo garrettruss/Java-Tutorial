@@ -1,3 +1,4 @@
+package PartOne;
 /*
 How could we make sure we got paid at least the amount we expected in our paycheck? We could use greater than or equal to, >=, or less than or equal to, <=!
 

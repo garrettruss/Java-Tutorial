@@ -1,3 +1,4 @@
+package PartOne;
 /*
 The modulo operator %, gives us the remainder after two numbers are divided.
 

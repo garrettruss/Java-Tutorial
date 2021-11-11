@@ -1,3 +1,4 @@
+package PartOne;
 public class MadLibs {
     /*
      * This program generates a mad libbed story. Author: Garrett Date: 6/14/2021
