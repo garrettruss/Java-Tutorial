@@ -1,4 +1,4 @@
-package NonLinearDataStructures.Trees;
+package NonLinearDataStructures.AnimalTree;
 
 import java.util.ArrayList;
 
@@ -34,23 +34,18 @@ public class TreeNode {
         }
     }
 
-    // removeChild with data parameter
-    public void removeChild(Object targetData) {
+    public void removeChild(Object data) {
         if (this.children.isEmpty()) {
             return;
         }
         for (TreeNode child : this.children) {
-            if (child.data == targetData) {
-                this.children.remove(child);
+            if (child.data == data) {
+                removeChild(child);
                 return;
             }
         }
         for (TreeNode child : this.children) {
-            child.removeChild(targetData);
+            child.removeChild(data);
         }
-    }
-
-    public static void main(String[] args) {
-
     }
 }

@@ -1,5 +1,8 @@
 package NonLinearDataStructures.Trees;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class Tree {
     public TreeNode root;
 
@@ -21,6 +24,40 @@ public class Tree {
             print(child, level + 1);
         }
     }
+
+    /*
+     * Depth-first-search (DFS) is a technique that visits the first child in the
+     * children list and that node’s children recursively before visiting all the
+     * first child’s siblings and then their children recursively.
+      */
+
+      public void depthFirstTraversal(TreeNode current) {
+        System.out.print(current.data + " ");
+        for (TreeNode child : current.children) {
+            depthFirstTraversal(child);
+        }
+    }
+
+    /*
+     * Breadth-first-search (BFS) is a technique in a tree that visits all children
+     * of a node first before visiting any further levels.
+     * 
+     * Notice that the root comes first, then all nodes in the first level next,
+     * then all nodes in the second level.
+     * 
+     */
+    public void breadthFirstTraversal() {
+        TreeNode current = this.root;
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(current);
+        while (!queue.isEmpty()) {
+            current = queue.poll();
+            System.out.print(current.data + " ");
+            queue.addAll(current.children);
+        }
+    }
+
+
 
     public static void main(String[] args) {
         TreeNode treeRoot = new TreeNode("S");
@@ -49,6 +86,10 @@ public class Tree {
 
         // Print the tree again
         tree.print();
+
+        tree.depthFirstTraversal(treeRoot);
+
+        tree.breadthFirstTraversal();
 
     }
 }
