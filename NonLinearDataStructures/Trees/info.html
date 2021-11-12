@@ -21,3 +21,30 @@ Note that the /safari node is child (to /photos) and parent (to lion.jpg and gir
 
 When a node has no children, we refer to it as a leaf node.
 */
+
+/* 
+Binary Search Tree
+Constraints are placed on the data or node arrangement of a tree to solve difficult problems like efficient search.
+
+A binary tree is a type of tree where each parent can have no more than two children, known as the left child and right child.
+
+Further constraints make a binary search tree:
+
+Left child values must be lesser than their parent.
+Right child values must be greater than their parent.
+The constraints of a binary search tree allow us to search the tree efficiently. At each node, we can discard half of the remaining possible values!
+
+Introduction
+Trees are wonderful data structures that can model real life hierarchical information, including organizational charts, genealogical trees, computer file systems, HTML elements on a web page also known as the Document Object Model (DOM), state diagrams, and more.
+
+A tree is composed of tree nodes. There is a root tree node, and children tree nodes which may or may not be parent nodes themselves. In this lesson, we will first focus on building the TreeNode data structure. Then we’ll create the Tree.
+
+A tree node is a very simple data structure that contains:
+
+Data
+A list of children, where each child is itself a tree node
+(Optional) Pointer to a parent tree node, if there is a parent. Some implementations do this, but we won’t for this lesson.
+We can add data to and remove data from a tree and traverse it in two different ways: depth-first or breadth-first.
+
+Let’s first implement our tree node data structure as a TreeNode.
+*/
