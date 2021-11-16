@@ -1,0 +1,36 @@
+<div>
+Algorithm Analysis
+Given a moderately unsorted data-set, bubble sort requires multiple passes through the input before producing a sorted list. Each pass through the list will place the next largest value in its proper place.
+
+We are performing n-1 comparisons for our inner loop. Then, we must go through the list n times in order to ensure that each item in our list has been placed in its proper order.
+
+The n signifies the number of elements in the list. In a worst case scenario, the inner loop does n-1 comparisons for each n element in the list.
+
+Therefore we calculate the algorithm’s efficiency as:
+
+\mathcal{O}(n(n-1)) = \mathcal{O}(n(n)) = \mathcal{O}(n^2)O(n(n−1))=O(n(n))=O(n 
+2
+ )
+The diagram analyzes the pseudocode implementation of bubble sort to show how we draw this conclusion.
+
+When calculating the run-time efficiency of an algorithm, we drop the constant (-1), which simplifies our inner loop comparisons to n.
+
+This is how we arrive at the algorithm’s runtime: O(n^2).
+
+Bubble sort is implemented with nested loops that iterate through the elements of the input array which results in a quadratic runtime.
+
+ Bubble sort sorts the input array by swapping values within the original array unless a copy is made at the beginning of the algorithm.
+
+ The bubble sort algorithm takes an array of elements and reorders the elements of the input from smallest to largest. To achieve this, bubble sort works by comparing a pair of neighboring elements and swapping their positions in the array so that the larger of the two elements is always on the right. Doing this continuously results in the largest element “bubbling” up to the end of the array, giving this sort its name. The algorithm only stops when there are no more values that need to be swapped.
+
+Below is a quick pseudocode example of what we will create in this lesson:
+
+while array is not sorted
+  for each value in array
+    if current value > next value
+      swap current value and next value
+ 
+return array
+
+Bubble sort is not the most efficient sorting algorithm. Bubble sort’s worst-case runtime is O(n^2). This is because we have to compare the current element we are looking at to each element in the array after it and repeat this check for every single element in the array. Its best-case runtime is O(n) for an already-sorted array.
+</div>
