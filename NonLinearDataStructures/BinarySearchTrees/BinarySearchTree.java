@@ -112,6 +112,11 @@ public class BinarySearchTree {
      * a left child node Recursively search from the left child node Else if: target
      * value is greater than or equal to current node's value and there is a right
      * child node Recursively search from the right child node Else return null
+     * 
+     * What is the time complexity for .insert() and .getNodeByValue() performed on
+     * an average, relatively balanced, Binary Search Tree with N values? For an
+     * average Binary Search Tree, the depth of the tree is log(N), and the methods
+     * make O(1) comparisons until the value is found at one of the depths.
      */
 
      public BinarySearchTree getNodeByValue(int value) {
@@ -186,15 +191,14 @@ public class BinarySearchTree {
      }
 
     public static void main(String[] args) {
-        BinarySearchTree tree = new BinarySearchTree(48);
-        tree.insert(24);
-        tree.insert(55);
-        tree.insert(26);
-        tree.insert(38);
-        tree.insert(56);
-        tree.insert(74);
+        System.out.println("Creating Binary Search Tree rooted at value 15:");
+        BinarySearchTree tree = new BinarySearchTree(15);
 
-        // Print depth-first traversal
+        for (int i = 0; i < 10; i++) {
+            tree.insert((int) (Math.random() * 100));
+        }
+
+        System.out.println("Printing the inorder depth-first traversal:");
         tree.depthFirstTraversal();
 
     }
