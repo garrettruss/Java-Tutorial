@@ -4,8 +4,8 @@ public class Bank {
     private CheckingAccount accountTwo;
 
     public Bank() {
-        this.accountOne = new CheckingAccount("Zeus", 100, "1");
-        this.accountTwo = new CheckingAccount("Hades", 200, "2");
+        this.accountOne = new CheckingAccount("Bob", 100, "1");
+        this.accountTwo = new CheckingAccount("Jones", 200, "2");
     }
 
     public static void main(String[] args) {
