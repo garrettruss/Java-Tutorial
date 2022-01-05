@@ -11,7 +11,7 @@ Fill it with a single letter, representing the grade you think you would get in 
 
 public class Char {
     public static void main(String[] args) {
-        char expectedGrade = 'a';
+        char expectedGrade = 'b';
         System.out.println(expectedGrade);
     }
 }
