@@ -24,7 +24,7 @@ public class RestaurantOrders {
                 // Assign orders to Sous Chef
                 if (this.sousChef.hasSpace()) {
                     this.sousChef.enqueue(order);
-                    System.out.println("Head Chef is busy! Assign " + order + " order to Sous Chef.");
+                    System.out.println("Head Chef is already busy! Assign " + order + " order to Sous Chef.");
                 } else {
                     this.waitingList.enqueue(order);
                     System.out.println("Both chefs are busy! Add " + order + " order to the waiting list.");
