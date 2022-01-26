@@ -27,7 +27,7 @@ public class RestaurantOrders {
                     System.out.println("Head Chef is already busy! Assign " + order + " order to Sous Chef.");
                 } else {
                     this.waitingList.enqueue(order);
-                    System.out.println("Both chefs are busy! Add " + order + " order to the waiting list.");
+                    System.out.println("Both chefs are busy! Add " + order + " order to the waiting list!");
                 }
 
             }
