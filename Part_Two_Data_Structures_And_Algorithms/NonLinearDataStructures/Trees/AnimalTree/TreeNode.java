@@ -1,4 +1,4 @@
-package Part_Two_Data_Structures_And_Algorithms.NonLinearDataStructures.AnimalTree;
+package Part_Two_Data_Structures_And_Algorithms.NonLinearDataStructures.Trees.AnimalTree;
 
 import java.util.ArrayList;
 

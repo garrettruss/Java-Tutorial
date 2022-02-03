@@ -1,4 +1,4 @@
-package Part_Two_Data_Structures_And_Algorithms.PizzaDeliveryStack;
+package Part_Two_Data_Structures_And_Algorithms.Stacks.PizzaDeliveryStack;
 
 public class LinkedList {
 

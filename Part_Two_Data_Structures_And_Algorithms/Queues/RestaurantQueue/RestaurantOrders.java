@@ -1,4 +1,4 @@
-package Part_Two_Data_Structures_And_Algorithms.RestaurantQueue;
+package Part_Two_Data_Structures_And_Algorithms.Queues.RestaurantQueue;
 
 public class RestaurantOrders {
 
