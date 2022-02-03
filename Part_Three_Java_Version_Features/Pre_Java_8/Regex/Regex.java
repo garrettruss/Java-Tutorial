@@ -251,7 +251,8 @@ public class Regex {
         System.out.println(str6.matches(regex6));
         System.out.println(str7.matches(regex7));
 
-        	String email = "bob456@gmail.com";
+        String email = "bob456@gmail.com";
+        
 		System.out.println("The Email Id of the customer is " + email);
 		if (isValidEmail(email))
 			System.out.println("The Email Id is valid!");
@@ -260,4 +261,4 @@ public class Regex {
 	
     }
 }
-// Outputs Match found
+
