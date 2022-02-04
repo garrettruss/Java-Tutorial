@@ -1,4 +1,4 @@
-package Part_Three_Java_Version_Features.Pre_Java_8.Enumerations;
+package Part_Three_Java_Versions_And_Background.Pre_Java_8.Enumerations;
 /* 
 https://howtodoinjava.com/java/enum/enum-tutorial/
 

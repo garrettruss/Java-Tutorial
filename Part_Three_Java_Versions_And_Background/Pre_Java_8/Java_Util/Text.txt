@@ -1,0 +1,34 @@
+https://howtodoinjava.com/interview-questions/useful-java-collection-interview-questions/
+
+By definition, a Collection is an object that can store a group of objects. Like in set theory, a set is a group of elements
+
+As shown in the above image, the collection framework has one interface at the top i.e. Collection. Set, List and Queue interfaces extend it. Then there are many other classes in these three branches.
+
+The framework provides classes and interfaces for representing different types of collections, such as Set, List, and Map. Besides providing basic implementations, it also provides other special-purpose implementations as well, for example, concurrent collections (ConcurrentMap, BlockingQueue, etc) and convenience implementations (Arrays.asList(), Collections.emptySet(), Collections.singleton(), etc)
+
+
+The framework also consists of Map interface, which is part of the collection framework but does not extend the Collection interface.
+
+
+The utility package, (java.util) contains all the classes and interfaces that are required by the collection framework. The collection framework contains an interface named an iterable interface which provides the iterator to iterate through all the collections. This interface is extended by the main collection interface which acts as a root for the collection framework. All the collections extend this collection interface thereby extending the properties of the iterator and the methods of this interface. The following figure illustrates the hierarchy of the collection framework. 
+
+The collection framework contains multiple interfaces where every interface is used to store a specific type of data. The following are the interfaces present in the framework. 
+
+1. Iterable Interface: This is the root interface for the entire collection framework. The collection interface extends the iterable interface. Therefore, inherently, all the interfaces and classes implement this interface. The main functionality of this interface is to provide an iterator for the collections. Therefore, this interface contains only one abstract method which is the iterator. It returns the 
+ 
+
+Iterator iterator(); 
+
+2. Collection Interface: This interface extends the iterable interface and is implemented by all the classes in the collection framework. This interface contains all the basic methods which every collection has like adding the data into the collection, removing the data, clearing the data, etc. All these methods are implemented in this interface because these methods are implemented by all the classes irrespective of their style of implementation. And also, having these methods in this interface ensures that the names of the methods are universal for all the collections. Therefore, in short, we can say that this interface builds a foundation on which the collection classes are implemented.
+
+3. 
+ 
+
+List <T> al = new ArrayList<> (); 
+List <T> ll = new LinkedList<> (); 
+List <T> v = new Vector<> (); 
+
+Where T is the type of the object 
+
+The classes which implement the List interface are as follows:
+
