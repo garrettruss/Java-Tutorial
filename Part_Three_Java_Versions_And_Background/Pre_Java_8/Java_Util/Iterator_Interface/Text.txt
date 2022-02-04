@@ -1,1 +1,0 @@
-The iterator interface provides the facility of iterating the elements in a forward direction only.
