@@ -1,0 +1,31 @@
+The word polymorphism means having many forms. In simple words, we can define polymorphism as the ability of a message to be displayed in more than one form. 
+
+Overloading is about same method have different signatures. Overriding is about same method, same signature but different classes connected through inheritance.
+
+Overloading is an example of compiler-time polymorphism and overriding is an example of run time polymorphism.
+
+Real-life Illustration: Polymorphism
+
+A person at the same time can have different characteristics. Like a man at the same time is a father, a husband, an employee. So the same person possesses different behavior in different situations. This is called polymorphism. 
+Polymorphism is considered one of the important features of Object-Oriented Programming. Polymorphism allows us to perform a single action in different ways. In other words, polymorphism allows you to define one interface and have multiple implementations. The word “poly” means many and “morphs” means forms, So it means many forms.
+
+Types of polymorphism
+
+
+Type 1: Compile-time polymorphism (Overloading)
+
+It is also known as static polymorphism. This type of polymorphism is achieved by method overloading.
+
+Method Overloading: When there are multiple functions with the same name but different parameters then these functions are said to be overloaded. Functions can be overloaded by change in the number of arguments or/and a change in the type of arguments.
+
+Method overloading can be done by changing: 
+
+The number of parameters in two methods.
+The data types of the parameters of methods.
+The Order of the parameters of methods.
+
+Type 2 Run-Time Polymorphism (Overriding)
+
+It is also known as Dynamic Method Dispatch. It is a process in which a function call to the overridden method is resolved at Runtime. This type of polymorphism is achieved by Method Overriding. Method overriding, on the other hand, occurs when a derived class has a definition for one of the member functions of the base class. That base function is said to be overridden.
+
+https://www.geeksforgeeks.org/polymorphism-in-java/?ref=lbp

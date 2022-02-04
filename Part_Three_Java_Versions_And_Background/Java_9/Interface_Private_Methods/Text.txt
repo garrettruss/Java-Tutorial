@@ -1,0 +1,5 @@
+From Java 9 onwards, interfaces can contain following also
+
+Static methods
+Private methods
+Private Static methods

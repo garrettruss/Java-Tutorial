@@ -1,0 +1,43 @@
+https://www.geeksforgeeks.org/abstraction-in-java-2/
+
+Data Abstraction is the property by virtue of which only the essential details are displayed to the user. The trivial or the non-essentials units are not displayed to the user. Ex: A car is viewed as a car rather than its individual components.
+
+Data Abstraction may also be defined as the process of identifying only the required characteristics of an object ignoring the irrelevant details. The properties and behaviours of an object differentiate it from other objects of similar type and also help in classifying/grouping the objects.
+
+Consider a real-life example of a man driving a car. The man only knows that pressing the accelerators will increase the speed of a car or applying brakes will stop the car, but he does not know about how on pressing the accelerator the speed is actually increasing, he does not know about the inner mechanism of the car or the implementation of the accelerator, brakes, etc in the car. This is what abstraction is. 
+
+In java, abstraction is achieved by interfaces and abstract classes. We can achieve 100% abstraction using interfaces.
+
+Abstract classes and Abstract methods :  
+
+An abstract class is a class that is declared with an abstract keyword.
+An abstract method is a method that is declared without implementation.
+An abstract class may or may not have all abstract methods. Some of them can be concrete methods
+A method defined abstract must always be redefined in the subclass, thus making overriding compulsory OR either make the subclass itself abstract.
+Any class that contains one or more abstract methods must also be declared with an abstract keyword.
+There can be no object of an abstract class. That is, an abstract class can not be directly instantiated with the new operator.
+An abstract class can have parameterized constructors and the default constructor is always present in an abstract class.
+
+Abstract class vs Interface 
+Type of methods: Interface can have only abstract methods. An abstract class can have abstract and non-abstract methods. From Java 8, it can have default and static methods also.
+Final Variables: Variables declared in a Java interface are by default final. An abstract class may contain non-final variables.
+Type of variables: Abstract class can have final, non-final, static and non-static variables. The interface has only static and final variables.
+Implementation: Abstract class can provide the implementation of the interface. Interface can’t provide the implementation of an abstract class.
+Inheritance vs Abstraction: A Java interface can be implemented using the keyword “implements” and an abstract class can be extended using the keyword “extends”.
+Multiple implementations: An interface can extend another Java interface only, an abstract class can extend another Java class and implement multiple Java interfaces.
+Accessibility of Data Members: Members of a Java interface are public by default. A Java abstract class can have class members like private, protected, etc.
+
+When to use what?
+
+Consider using abstract classes if any of these statements apply to your situation:  
+
+In the java application, there are some related classes that need to share some lines of code then you can put these lines of code within the abstract class and this abstract class should be extended by all these related classes.
+You can define the non-static or non-final field(s) in the abstract class so that via a method you can access and modify the state of the object to which they belong.
+You can expect that the classes that extend an abstract class have many common methods or fields, or require access modifiers other than public (such as protected and private).
+
+
+Consider using interfaces if any of these statements apply to your situation:  
+
+It is total abstraction, All methods declared within an interface must be implemented by the class(es) that implements this interface.
+A class can implement more than one interface. It is called multiple inheritances.
+You want to specify the behavior of a particular data type but are not concerned about who implements its behavior.

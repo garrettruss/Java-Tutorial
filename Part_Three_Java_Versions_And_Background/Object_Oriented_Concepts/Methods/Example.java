@@ -7,6 +7,7 @@ Modifiers are divided into two groups:
 
 Access Modifiers controls the access level
 Non-Access Modifiers do not control access level but provide other functionality
+
 There are four types of Java access modifiers:
 
 Private: The access level of a private modifier is only within the class. It cannot be accessed from outside the class.
