@@ -1,0 +1,10 @@
+The Java Shell tool (JShell) is an interactive tool for learning the Java programming language and prototyping Java code. JShell is a Read-Evaluate-Print Loop (REPL), which evaluates declarations, statements, and expressions as they are entered and immediately shows the results. The tool is run from the command line. JShell was introduced in java 9 and hence can not be used in java 8. 
+
+JShell helps you try out code and easily explore options as you develop your program. You can test individual statements, try out different variations of a method, and experiment with unfamiliar APIs within the JShell session. JShell doesn’t replace an IDE. As you develop your program, paste code into JShell to try it out, and then paste working code from JShell into your program editor or IDE. 
+
+Starting and Stopping JShell 
+To start Jshell, first we must have installed Java 9 then open terminal in Linux or command prompt in windows and type jshell. It will start jshell session and displays a welcome message to the console. 
+
+to exit jSHell enter /exit 
+
+https://www.geeksforgeeks.org/jshell-java-9-new-feature/#:~:text=The%20Java%20Shell%20tool%20(JShell,run%20from%20the%20command%20line. 

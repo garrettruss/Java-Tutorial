@@ -32,3 +32,24 @@ Where T is the type of the object
 
 The classes which implement the List interface are as follows:
 
+
+
+What is Queue and Stack. Tell the Differences?
+A Queue is a collection designed for holding elements before processing. Besides basic Collection operations, queues provide additional insertion, extraction, and inspection operations.
+
+Queues typically, but do not necessarily, order elements in a FIFO (first-in-first-out) manner. Use a queue if you want to process a stream of incoming items in the order received. Good for work lists and handling requests.
+
+A Stack is also a form of Queue, but it is LIFO (last-in-first-out). Use a stack if you want to push and pop from the top of the stack only. Good for recursive algorithms.
+
+Whatever the ordering used, the head of the queue is that element that would be removed by a call to remove() or poll().
+
+Also, note that Stack and Vector are both synchronized.
+
+ What is Comparable and Comparator interfaces?
+In Java, all collection classes that have features of automatic sorting use compare() methods to ensure the correct sorting of elements. For example,TreeSet, TreeMap etc.
+
+To support sorting of its instances, a class needs to implement Comparable interface. That’s why all wrapper classes like Integer, Double and String class implements Comparable interface.
+
+Comparable helps in preserving default natural sorting, whereas Comparator helps in sorting the elements in some special sorting pattern.
+
+The instance of Comparator is passed usually as the sort() method argument in the supporting collections.
