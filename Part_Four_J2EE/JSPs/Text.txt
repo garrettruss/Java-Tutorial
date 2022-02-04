@@ -1,0 +1,81 @@
+Introduction
+It stands for Java Server Pages.
+It is a server side technology.
+It is used for creating web application.
+It is used to create dynamic web content.
+In this JSP tags are used to insert JAVA code into HTML pages.
+It is an advanced version of Servlet Technology.
+It is a Web based technology helps us to create dynamic and platform independent web pages.
+In this, Java code can be inserted in HTML/ XML pages or both.
+JSP is first converted into servlet by JSP container before processing the client’s request.
+JSP pages are more advantageous than Servlet:
+They are easy to maintain.
+No recompilation or redeployment is required.
+JSP has access to entire API of JAVA .
+JSP are extended version of Servlet.
+Features of JSP
+Coding in JSP is easy :- As it is just adding JAVA code to HTML/XML.
+Reduction in the length of Code :- In JSP we use action tags, custom tags etc.
+Connection to Database is easier :-It is easier to connect website to database and allows to read or write data easily to the database.
+Make Interactive websites :- In this we can create dynamic web pages which helps user to interact in real time environment.
+Portable, Powerful, flexible and easy to maintain :- as these are browser and server independent.
+No Redeployment and No Re-Compilation :- It is dynamic, secure and platform independent so no need to re-compilation.
+Extension to Servlet :- as it has all features of servlets, implicit objects and custom tags
+JSP syntax
+
+Syntax available in JSP are following
+Declaration Tag :-It is used to declare variables.
+Syntax:- 
+<%!  Dec var  %>
+Example:-
+<%! int var=10; %>
+ 
+Java Scriplets :- It allows us to add any number of JAVA code, variables and expressions.
+ Syntax:- 
+<% java code %>
+JSP Expression :- It evaluates and convert the expression to a string.
+ Syntax:- 
+<%= expression %> 
+ Example:- 
+<% num1 = num1+num2 %> 
+JAVA Comments :- It contains the text that is added for information which has to be ignored.
+ Syntax:- 
+<% -- JSP Comments %>
+Process of Execution
+
+Steps for Execution of JSP are following:-
+Create html page from where request will be sent to server eg try.html.
+To handle to request of user next is to create .jsp file Eg. new.jsp
+Create project folder structure.
+Create XML file eg my.xml.
+Create WAR file.
+Start Tomcat
+Run Application
+
+
+
+
+Example of Hello World
+We will make one .html file and .jsp file
+
+demo.jsp
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Hello World - JSP tutorial</title>
+</head>
+<body>
+    <%= "Hello World!" %>
+</body>
+</html>
+Advantages of using JSP
+It does not require advanced knowledge of JAVA
+It is capable of handling exceptions
+Easy to use and learn
+It can tags which are easy to use and understand
+Implicit objects are there which reduces the length of code
+It is suitable for both JAVA and non JAVA programmer
+Disadvantages of using JSP
+Difficult to debug for errors.
+First time access leads to wastage of time
+It’s output is HTML which lacks features.
