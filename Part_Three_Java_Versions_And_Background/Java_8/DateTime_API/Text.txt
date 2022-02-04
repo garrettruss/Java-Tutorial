@@ -1,0 +1,12 @@
+Java 8 introduced new APIs for Date and Time to address the shortcomings of the older java.util.Date and java.util.Calendar.
+
+Java 8 under the package java.time introduced a new date-time API, most important classes among them are :  
+
+Local : Simplified date-time API with no complexity of timezone handling.
+Zoned : Specialized date-time API to deal with various timezones.
+LocalDate/LocatTime and LocalDateTime API : Use it when time zones are NOT required.
+
+
+https://howtodoinjava.com/java-date-and-time-apis/
+
+https://www.geeksforgeeks.org/new-date-time-api-java8/

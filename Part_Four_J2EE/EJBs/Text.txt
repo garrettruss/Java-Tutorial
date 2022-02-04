@@ -1,0 +1,62 @@
+https://www.geeksforgeeks.org/enterprise-java-beans-ejb/
+
+Enterprise Java Beans (EJB) is one of the several Java APIs for standard manufacture of enterprise software. EJB is a server-side software element that summarizes business logic of an application. Enterprise Java Beans web repository yields a runtime domain for web related software elements including computer reliability, Java Servlet Lifecycle (JSL) management, transaction procedure and other web services. The EJB enumeration is a subset of the Java EE enumeration. 
+
+The EJB enumeration was originally developed by IBM in 1997 and later adopted by Sun Microsystems in 1999 and enhanced under the Java Community Process. 
+
+The EJB enumeration aims to provide a standard way to implement the server-side business software typically found in enterprise applications. Such machine code addresses the same types of problems, and solutions to these problems are often repeatedly re-implemented by programmers. Enterprise Java Beans is assumed to manage such common concerns as endurance, transactional probity and security in a standard way that leaves programmers free to focus on the particular parts of the enterprise software at hand. 
+
+To run EJB application we need an application server (EJB Container) such as Jboss, Glassfish, Weblogic, Websphere etc. It performs: 
+
+1. Life cycle management 
+2. Security 
+3. Transaction management 
+4. Object pooling 
+
+ 
+
+Types of Enterprise Java Beans
+
+There are three types of EJB: 
+1. Session Bean: Session bean contains business logic that can be invoked by local, remote or webservice client. There are two types of session beans: (i) Stateful session bean and (ii) Stateless session bean. 
+ 
+
+(i) Stateful Session bean : 
+Stateful session bean performs business task with the help of a state. Stateful session bean can be used to access various method calls by storing the information in an instance variable. Some of the applications require information to be stored across separate method calls. In a shopping site, the items chosen by a customer must be stored as data is an example of stateful session bean. 
+ 
+(ii) Stateless Session bean : 
+Stateless session bean implement business logic without having a persistent storage mechanism, such as a state or database and can used shared data. Stateless session bean can be used in situations where information is not required to used across call methods. 
+ 
+2. Message Driven Bean: Like Session Bean, it contains the business logic but it is invoked by passing message. 
+3. Entity Bean: It summarizes the state that can be remained in the database. It is deprecated. Now, it is replaced with JPA (Java Persistent API). There are two types of entity bean: 
+ 
+
+(i) Bean Managed Persistence : 
+In a bean managed persistence type of entity bean, the programmer has to write the code for database calls. It persists across multiple sessions and multiple clients. 
+ 
+(ii) Container Managed Persistence : 
+Container managed persistence are enterprise bean that persists across database. In container managed persistence the container take care of database calls. 
+ 
+ 
+
+When to use Enterprise Java Beans
+
+1.Application needs Remote Access. In other words, it is distributed. 
+2.Application needs to be scalable. EJB applications supports load balancing, clustering and fail-over. 
+3.Application needs encapsulated business logic. EJB application is differentiated from demonstration and persistent layer. 
+
+ 
+
+Advantages of Enterprise Java Beans
+
+1. EJB repository yields system-level services to enterprise beans, the bean developer can focus on solving business problems. Rather than the bean developer, the EJB repository is responsible for system-level services such as transaction management and security authorization. 
+2. The beans rather than the clients contain the application’s business logic, the client developer can focus on the presentation of the client. The client developer does not have to code the pattern that execute business rules or access databases. Due to this the clients are thinner which is a benefit that is particularly important for clients that run on small devices. 
+3. Enterprise Java Beans are portable elements, the application assembler can build new applications from the beans that already exists. 
+
+ 
+
+Disadvantages of Enterprise Java Beans
+
+1. Requires application server 
+2. Requires only java client. For other language client, you need to go for webservice. 
+3. Complex to understand and develop EJB applications.
