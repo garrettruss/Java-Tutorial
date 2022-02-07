@@ -11,6 +11,7 @@ public class Bank {
     public static void main(String[] args) {
         Bank bankOfGods = new Bank();
         bankOfGods.accountOne.getAccountInformation();
+        bankOfGods.accountTwo.getAccountInformation();
         //bankOfGods.accountOne.calculateNextMonthInterest();
     }
 
